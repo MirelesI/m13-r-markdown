@@ -1,0 +1,40 @@
+---
+title: "Host_Demo"
+output: html_document
+---
+
+```{r, include=FALSE}
+library(knitr)
+```
+
+```{r, cars, echo=FALSE}
+cars.mean <- mean(cars$speed)
+```
+
+## Including Plots
+
+
+
+```{r, echo=FALSE}
+hist(cars$speed)
+```
+
+
+
+The mean speed of cars was : `r cars.mean`.
+
+
+
+
+
+
+
+
+
+```{r, echo=FALSE}
+kable(cars)
+
+```
+
+
+
